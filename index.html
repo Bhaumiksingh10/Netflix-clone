@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Netflix Clone</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="navbar">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/7/7a/Logonetflix.png" alt="Netflix Logo" class="logo">
+    <nav>
+      <ul>
+        <li>Home</li>
+        <li>TV Shows</li>
+        <li>Movies</li>
+        <li>Latest</li>
+        <li onclick="showMyList()">My List</li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Unlimited movies, TV shows, and more.</h1>
+      <p>Watch anywhere. Cancel anytime.</p>
+      <button onclick="alertSubscribe()">Subscribe Now</button>
+    </div>
+  </section>
+
+  <section class="movie-row">
+    <h2>Popular on Netflix</h2>
+    <div class="movie-posters" id="popular"></div>
+  </section>
+
+  <section class="movie-row">
+    <h2>Trending Now</h2>
+    <div class="movie-posters" id="trending"></div>
+  </section>
+
+  <section class="movie-row" id="myListSection" style="display:none">
+    <h2>My List</h2>
+    <div class="movie-posters" id="myList"></div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
